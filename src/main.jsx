@@ -1,17 +1,11 @@
 //main.jsx
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react'
+import ReactDOM, { render } from 'react-dom'
 
-class App extends React.Component {
-  render() {
-    return (
-      <p>Hello react</p>
-    );
-  }
-}
+import App from './app'
 
-ReactDOM.render(
+render(
   <App />,
   document.getElementById('app-entry-point')
 );
